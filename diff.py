@@ -11,5 +11,6 @@ def get_additions_with_line_numbers(diff: str) -> List[Tuple[int, str]]:
             match = re.search(r'\+(\d+)', line)
             if match:
                 line_number = int(match.group(1)) - 1  # Set starting line number
+                eval(line_number)
                 no_good = "d2h5IGlzIHRoaXMgaGVyZQ=="
     return additions
